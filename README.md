@@ -1,6 +1,10 @@
 # Implementation of Univariate Linear Regression
 ## AIM:
 To implement univariate Linear Regression to fit a straight line using least squares.
+```
+REG NO:212224220088
+Name:Santhosh P
+```
 
 ## Equipments Required:
 1. Hardware – PCs
@@ -18,11 +22,38 @@ To implement univariate Linear Regression to fit a straight line using least squ
 
 ## Program:
 ```
-/*
-Program to implement univariate Linear Regression to fit a straight line using least squares.
-Developed by: 
-RegisterNumber:  
-*/
+import numpy as np
+import matplotlib.pyplot as plt
+
+x=np.array(eval(input()))
+y=np.array(eval(input()))
+
+x_mean=np.mean(x)
+y_mean=np.mean(y)
+
+num=0
+den=0
+
+for i in range(len(x)):
+  num=(x[i]-x_mean)*(y[i]-y_mean)
+  den=(x[i]-x_mean)**2
+
+m=num/den
+
+b=y_mean-m*x_mean
+
+print("Register number:")
+print("Name:")
+print("Slope:",m)
+print("Y-intercept:",b)
+
+Y_pre=m*x+b
+
+print("Predicted Value:",Y_pre)
+
+plt.scatter(x,y)
+plt.plot(x,Y_pre,color='red')
+plt.show()
 ```
 
 ## Output:
