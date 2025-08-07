@@ -42,8 +42,8 @@ m=num/den
 
 b=y_mean-m*x_mean
 
-print("Register number:")
-print("Name:")
+print("Register number:212224220088")
+print("Name:Santhosh P")
 print("Slope:",m)
 print("Y-intercept:",b)
 
@@ -57,7 +57,8 @@ plt.show()
 ```
 
 ## Output:
-![best fit line](sam.png)
+<img width="1027" height="666" alt="image" src="https://github.com/user-attachments/assets/334d39e2-9a12-491b-b9ee-d865097a3695" />
+
 
 
 ## Result:
